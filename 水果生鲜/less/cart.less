@@ -1,0 +1,177 @@
+// 顶部导航栏
+.nav-top-bar {
+  height: 45px;
+  top: 0;
+  border-bottom: 1px solid #f5f6f8;
+  box-sizing: border-box;
+  a {
+    color: #d51e1f;
+    height: 100%;
+    line-height: 45px;
+    i {
+      margin-top: 2px;
+      font-size: 18px;
+      height: 15px;
+      width: 15px;
+    }
+  }
+  span:last-child {
+    color: #d51e1f;
+  }
+}
+
+// 展示购物车商品
+.cart-goods {
+  position: relative;
+  height: calc(100vh - 145px);
+  top: 45px;
+  overflow-y: auto;
+  ul {
+    display: block;
+    width: 100%;
+    li {
+      height: 130px;
+      padding: 15px 15px 20px 15px;
+      border-bottom: 1px solid #f5f6f8;
+      box-sizing: border-box;
+      i {
+        height: 15px;
+        min-width: 15px;
+        border-radius: 50%;
+        background: #c03131 url(../../images/business/duigou.svg) no-repeat;
+        background-size: cover;
+      }
+      img {
+        height: 95px;
+        width: 95px;
+        background-color: #f8f8f8;
+      }
+      .cart-goods-info {
+        p {
+          max-width: 200px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        & > div > span:first-child {
+          color: #d51e1f;
+        }
+        & > div {
+          height: 30px;
+          line-height: 30px;
+          div {
+            height: 30px;
+            width: 90px;
+            background-color: #f2f3f5;
+            border-radius: 5px;
+            span {
+              display: block;
+              width: 30px;
+              height: 100%;
+              text-align: center;
+              line-height: 30px;
+            }
+            span:nth-of-type(2) {
+              border-left: 2px solid #fff;
+              border-right: 2px solid #fff;
+            }
+            span:not(span:nth-of-type(2)) {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //
+  & > div {
+    display: none;
+    text-align: center;
+    margin-top: 150px;
+    i {
+      font-size: 100px;
+      color: #d4d7d9;
+    }
+  }
+}
+
+// 支付部分
+.payment {
+  height: 50px;
+  bottom: 50px;
+  div:first-child {
+    span:first-child {
+      float: left;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      border: 1px solid #ebebeb;
+      background: #c03131 url(../../images/business/duigou.svg) no-repeat;
+      background-size: cover;
+    }
+    span:last-child {
+      color: #323233;
+    }
+  }
+  div:last-child {
+    height: 100%;
+    line-height: 50px;
+    span:nth-of-type(2) {
+      color: #d51e1f;
+    }
+    & > span:last-child {
+      float: right;
+      width: 110px;
+      height: 100%;
+      text-align: center;
+      background-color: #d51e1f;
+    }
+  }
+}
+
+// 底部导航栏
+.nav-bottom-bar {
+  height: 50px;
+  bottom: 0px;
+  border-top: 1px solid #ebebeb;
+  box-sizing: border-box;
+  ul {
+    height: 100%;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #787d82;
+      text-align: center;
+
+      i {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+
+    li:not(li:nth-of-type(2)) {
+      a {
+        i {
+          font-weight: bold;
+        }
+      }
+    }
+
+    li:nth-child(2n + 1) {
+      a {
+        i::before {
+          font-size: 25px;
+        }
+      }
+    }
+
+    li:nth-of-type(3) {
+      a {
+        color: #d51e1f;
+      }
+    }
+  }
+}

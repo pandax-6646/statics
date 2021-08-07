@@ -1,0 +1,54 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+/* 重复使用 */
+a {
+  text-decoration: none;
+  color: #595959;
+}
+
+a:hover {
+  color: #000;
+}
+
+.flex-layout-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bg-icon {
+  display: inline-block;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* 伪元素图片 */
+.after-icon {
+  position: relative;
+}
+
+.after-icon::after {
+  content: "";
+  position: absolute;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.box-shadow-grey {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 伪元素小角标 */
+.after-corner::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
+}

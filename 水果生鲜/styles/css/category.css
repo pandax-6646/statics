@@ -1,0 +1,82 @@
+.search-nav {
+  height: 55px;
+  padding: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.search-nav div {
+  height: 100%;
+  background-color: #f7f8fa;
+}
+.search-nav div input {
+  height: 100%;
+  outline: none;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.search-nav div a {
+  line-height: 35px;
+}
+.search-nav div a i {
+  font-size: 15px;
+}
+.goods-list {
+  margin-bottom: 50px;
+}
+.goods-list .list-title {
+  min-width: 125px;
+  height: 300px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+  color: #323233;
+}
+.goods-list .list-title li {
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  border-left: 4px solid transparent;
+  padding-left: 10px;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+.goods-list .list-title li.active {
+  border-left-color: #d51e1f;
+  background-color: #fff;
+}
+.goods-list .list-goods li {
+  width: 100px;
+  margin-bottom: 5px;
+}
+.goods-list .list-goods li img {
+  width: 100%;
+}
+.nav-bottom-bar {
+  height: 50px;
+  bottom: 0px;
+  border-top: 1px solid #ebebeb;
+  box-sizing: border-box;
+}
+.nav-bottom-bar ul {
+  height: 100%;
+}
+.nav-bottom-bar ul a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #787d82;
+  text-align: center;
+}
+.nav-bottom-bar ul a i {
+  display: block;
+  margin-bottom: 5px;
+}
+.nav-bottom-bar ul li:not(li:nth-of-type(2)) a i {
+  font-weight: bold;
+}
+.nav-bottom-bar ul li:nth-child(2n + 1) a i::before {
+  font-size: 25px;
+}
+.nav-bottom-bar ul li:nth-of-type(2) a {
+  color: #d51e1f;
+}

@@ -1,0 +1,237 @@
+.tab-bar {
+  height: 45px;
+  width: 100%;
+  top: 0px;
+  z-index: 999;
+
+  div {
+    color: #c03131;
+  }
+
+  &>span:nth-of-type(1) {
+    text-align: center;
+  }
+
+  &>span:last-child {
+    width: 57px;
+  }
+}
+
+.detail-container {
+  position: relative;
+  margin-bottom: 55px;
+
+  .swiper {
+    height: 335px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .goods-info {
+    height: 290px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    .title {
+      span:not(:last-child) {
+        display: inline-block;
+        font-size: 14px;
+        height: 15px;
+        width: 45px;
+
+        line-height: 15px;
+        text-align: center;
+        background-color: #78d0a1;
+        color: #fff;
+      }
+
+      span:nth-of-type(2) {
+        background-color: #91bc6f;
+      }
+
+      span:last-child {
+        color: #2c3e50;
+        line-height: 25px;
+      }
+    }
+
+    .describe {
+      color: #797d82;
+    }
+
+    .price {
+      color: #797d82;
+
+      span:nth-of-type(1) {
+        color: #c03131;
+      }
+
+      span:nth-of-type(2) {
+
+        text-decoration: line-through;
+      }
+
+      span:nth-of-type(3) {
+        float: right;
+      }
+    }
+
+    .specs {
+      border-bottom: 1px solid #eee;
+      padding: 15px;
+      color: #797d82;
+
+      i::before {
+        font-size: 14px;
+      }
+    }
+
+    .distribution {
+      padding: 15px;
+      border-bottom: 1px solid #eee;
+
+      span {
+        color: #797d82;
+      }
+
+      p:nth-of-type(1) {
+        max-width: 300px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      i::before {
+        font-size: 14px;
+      }
+    }
+
+    p:last-child {
+      i::before {
+        color: #ff7563;
+      }
+
+      span {
+        color: #797d82;
+      }
+    }
+  }
+
+
+
+  .show-img {
+    display: block;
+
+    .divider {
+      position: relative;
+      top: 25px;
+      left: calc(50% - 53px);
+      width: 105px;
+      height: 1px;
+      background-color: #797d82;
+      margin-bottom: 25px;
+
+      &::after {
+        color: gray;
+        content: "商品详情";
+        position: absolute;
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        background-color: #fff;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    img:nth-of-type(1) {
+      margin-top: 50px;
+    }
+
+    .procedure {
+      &>div {
+        position: relative;
+        top: 25px;
+        left: calc(50% - 73px);
+        width: 145px;
+        height: 1px;
+        background-color: #797d82;
+
+        &::after {
+          content: "预定流程及须知";
+          position: absolute;
+          top: -6px;
+          left: 50%;
+          width: fit-content;
+          transform: translateX(-50%);
+          font-size: 12px;
+          color: gray;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .logistics-info {
+    color: #797d82;
+    font-size: 13px;
+
+    div {
+      padding: 10px 10px;
+
+      p:first-child {
+        font-weight: bold;
+      }
+
+      p:last-child {
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 50px;
+  bottom: 0px;
+
+  .left-btn {
+    width: 50%;
+    text-align: center;
+
+    i::before {
+      font-size: 25px;
+    }
+  }
+
+
+
+
+  .right-btn {
+    width: 50%;
+    color: #fff;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+
+    span {
+      height: 100%;
+      width: 50%;
+
+    }
+
+    span:first-child {
+      border-top-left-radius: 20px;
+      background: linear-gradient(90deg, #ffd01e, #ff8917);
+    }
+
+    span:last-child {
+      background: linear-gradient(90deg, #ff6034, #ee0a24);
+    }
+  }
+}

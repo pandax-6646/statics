@@ -1,0 +1,229 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-left: 275px;
+    margin-bottom: 10px;
+}
+
+.title img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #f56600;
+}
+
+.title span {
+    margin-left: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.title span h1 {
+    font-weight: 400;
+    color: #333333;
+}
+
+.login {
+    position: relative;
+    height: 415px;
+    width: 100%;
+    background: #fff url("../images/banner.png") no-repeat;
+    background-size: cover;
+}
+
+.login-container {
+    position: absolute;
+    height: 370px;
+    width: 280px;
+    left: 790px;
+    top: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.login-container .login-change {
+    font-size: 20px;
+    text-align: center;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+.login-container .login-change span {
+    cursor: pointer;
+}
+
+.login-container input {
+    width: 220px;
+    height: 35px;
+    outline: none;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    color: #9d9d9d;
+    border: 1px solid #e0e0e0;
+}
+
+.login-container input:nth-of-type(2) {
+
+    color: #9d9d9d;
+
+}
+
+.submit {
+    width: 238px;
+    height: 35px;
+    background-color: #f56600;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.login-container p:nth-of-type(2) {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+    color: #999999;
+}
+
+.login-container p:nth-of-type(2) span {
+    margin: 0 10px;
+}
+
+.login-container p:nth-of-type(2) span:hover {
+    color: #338fff;
+    cursor: pointer;
+}
+
+.login-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 55px;
+    width: 240px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 62px;
+}
+
+.login-bottom i {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #7b7b7b;
+}
+
+.login-bottom i::after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 20px;
+    width: 19px;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+    
+    background-size: cover;
+    background: url("../images/icons_type.png") no-repeat;
+}
+
+.login-bottom::after {
+    content: '其他方式登录';
+    position: absolute;
+    left: 50%;
+    top: -9px;
+    transform: translateX(-50%);
+    color: #e0e0e0;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.login-bottom i:nth-of-type(1)::after {
+    background-position-x: 21%;
+}
+
+.login-bottom i:nth-of-type(2)::after {
+    background-position-x: 43%;
+}
+
+.login-bottom i:nth-of-type(3)::after {
+    width: 21px;
+    background-position-x: 66%;
+}
+
+.login-bottom i:nth-of-type(4)::after {
+    width: 24px;
+    background-position-x: 101%;
+}
+
+
+
+
+.login-container .login-change span {
+
+    font-weight: bold;
+}
+
+.login-container .login-change span:first-child {
+    color: #f89100;
+    margin-right: 20px;
+}
+
+.login-container .login-change span:last-child {
+    color: #666666;
+    margin-left: 20px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #757575;
+    margin: 45px 0 70px;
+}
+
+.footer p:first-child {
+    margin-bottom: 10px;
+}
+
+.footer p:first-child span {
+    margin: 0 10px;
+}
+
+.footer p:first-child span:hover {
+    color: #333333;
+    cursor: pointer;
+}
+
+.footer p:last-child span {
+    margin: 0 10px;
+}
+
+.footer p:last-child span:first-child {
+    position: relative;
+}
+
+.footer p:last-child span:first-child::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 15px;
+    width: 15px;
+    left: 210px;
+    top: -3px;
+    background: transparent url("../images/plice.svg") no-repeat;
+    background-size: 100% 100%;
+}

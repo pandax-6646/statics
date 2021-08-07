@@ -1,0 +1,182 @@
+.tab-bar {
+  height: 45px;
+  width: 100%;
+  top: 0px;
+  z-index: 999;
+}
+.tab-bar div {
+  color: #c03131;
+}
+.tab-bar > span:nth-of-type(1) {
+  text-align: center;
+}
+.tab-bar > span:last-child {
+  width: 57px;
+}
+.detail-container {
+  position: relative;
+  margin-bottom: 55px;
+}
+.detail-container .swiper {
+  height: 335px;
+}
+.detail-container .swiper img {
+  height: 100%;
+  width: 100%;
+}
+.detail-container .goods-info {
+  height: 290px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.detail-container .goods-info .title span:not(:last-child) {
+  display: inline-block;
+  font-size: 14px;
+  height: 15px;
+  width: 45px;
+  line-height: 15px;
+  text-align: center;
+  background-color: #78d0a1;
+  color: #fff;
+}
+.detail-container .goods-info .title span:nth-of-type(2) {
+  background-color: #91bc6f;
+}
+.detail-container .goods-info .title span:last-child {
+  color: #2c3e50;
+  line-height: 25px;
+}
+.detail-container .goods-info .describe {
+  color: #797d82;
+}
+.detail-container .goods-info .price {
+  color: #797d82;
+}
+.detail-container .goods-info .price span:nth-of-type(1) {
+  color: #c03131;
+}
+.detail-container .goods-info .price span:nth-of-type(2) {
+  text-decoration: line-through;
+}
+.detail-container .goods-info .price span:nth-of-type(3) {
+  float: right;
+}
+.detail-container .goods-info .specs {
+  border-bottom: 1px solid #eee;
+  padding: 15px;
+  color: #797d82;
+}
+.detail-container .goods-info .specs i::before {
+  font-size: 14px;
+}
+.detail-container .goods-info .distribution {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+.detail-container .goods-info .distribution span {
+  color: #797d82;
+}
+.detail-container .goods-info .distribution p:nth-of-type(1) {
+  max-width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.detail-container .goods-info .distribution i::before {
+  font-size: 14px;
+}
+.detail-container .goods-info p:last-child i::before {
+  color: #ff7563;
+}
+.detail-container .goods-info p:last-child span {
+  color: #797d82;
+}
+.detail-container .show-img {
+  display: block;
+}
+.detail-container .show-img .divider {
+  position: relative;
+  top: 25px;
+  left: calc(50% - 53px);
+  width: 105px;
+  height: 1px;
+  background-color: #797d82;
+  margin-bottom: 25px;
+}
+.detail-container .show-img .divider::after {
+  color: gray;
+  content: "商品详情";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  background-color: #fff;
+}
+.detail-container .show-img img {
+  width: 100%;
+}
+.detail-container .show-img img:nth-of-type(1) {
+  margin-top: 50px;
+}
+.detail-container .show-img .procedure > div {
+  position: relative;
+  top: 25px;
+  left: calc(50% - 73px);
+  width: 145px;
+  height: 1px;
+  background-color: #797d82;
+}
+.detail-container .show-img .procedure > div::after {
+  content: "预定流程及须知";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: fit-content;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: gray;
+  background-color: #fff;
+}
+.detail-container .logistics-info {
+  color: #797d82;
+  font-size: 13px;
+}
+.detail-container .logistics-info div {
+  padding: 10px 10px;
+}
+.detail-container .logistics-info div p:first-child {
+  font-weight: bold;
+}
+.detail-container .logistics-info div p:last-child {
+  line-height: 20px;
+}
+.footer {
+  height: 50px;
+  bottom: 0px;
+}
+.footer .left-btn {
+  width: 50%;
+  text-align: center;
+}
+.footer .left-btn i::before {
+  font-size: 25px;
+}
+.footer .right-btn {
+  width: 50%;
+  color: #fff;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+.footer .right-btn span {
+  height: 100%;
+  width: 50%;
+}
+.footer .right-btn span:first-child {
+  border-top-left-radius: 20px;
+  background: linear-gradient(90deg, #ffd01e, #ff8917);
+}
+.footer .right-btn span:last-child {
+  background: linear-gradient(90deg, #ff6034, #ee0a24);
+}

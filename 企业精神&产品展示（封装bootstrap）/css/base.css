@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+body,
+a {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row::before {
+  content: "";
+  display: table;
+}
+
+.txt-center {
+  text-align: center;
+}

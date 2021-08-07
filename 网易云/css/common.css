@@ -1,0 +1,26 @@
+input {
+  outline: none;
+  border: 0px;
+}
+
+.after-bg {
+  position: relative;
+}
+
+.after-bg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.row-center {
+  width: 1105px;
+  margin: 0 auto;
+}
+
+.clear-float-after::after {
+  content: '';
+  clear: both;
+  display: block;
+}
